@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Contact</title>
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300i,400,500" rel="stylesheet">
+
+	<link rel="stylesheet" href="vendor/themify-icons/themify-icons.css">
+	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<link rel="stylesheet" href="vendor/owl-carousel/owl.theme.default.min.css">
+	<link rel="stylesheet" href="vendor/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================Offcanvus Menu Area =================-->
+	<div class="side_menu">
+			<ul class="list menu_right">
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="projects.html">Projects</a>
+				</li>
+				<li>
+					<a href="service.html">Service</a>
+				</li>
+				
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+	</div>
+	<!--================End Offcanvus Menu Area =================-->
+
+	<!--================Canvus Menu Area =================-->
+	<div class="canvus_menu">
+		<div class="container">
+			<div class="float-right">
+				<div class="toggle_icon" title="Menu Bar">
+					<span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+  <!--================End Canvus Menu Area =================-->
+  
+  <header class="hero-banner project-bg">
+    <a class="navbar-brand" href="index.html">
+			<img src="img/logo25.png" alt="">
+		</a>
+    <div class="container">
+      <h2 class="section-intro__subtitle">Contact Us</h2>
+      <div class="btn-group breadcrumb">
+        <a href="#/" class="btn">Home</a>
+        <span class="btn btn--rightBorder">Contact</span>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="section-margin">
+    <div class="container">
+      <!-- google map start -->
+      <div class="d-none d-sm-block mb-5 pb-4">
+        <div id="map" style="height:0px;"></div>
+        <script>
+          function initMap() {
+            var uluru = {lat: -25.363, lng: 131.044};
+            var grayStyles = [
+              {
+                featureType: "all",
+                stylers: [
+                  { saturation: -90 },
+                  { lightness: 50 }
+                ]
+              },
+              {elementType: 'labels.text.fill', stylers: [{color: '#A3A3A3'}]}
+            ];
+            var map = new google.maps.Map(document.getElementById('map'), {
+              center: {lat: -31.197, lng: 150.744},
+              zoom: 9,
+              styles: grayStyles,
+              scrollwheel:  false
+            });
+          }
+          
+        </script>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.8436392741214!2d85.13723061449286!3d25.61011152110986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed585cedefe51d%3A0x64df105c69cad7f0!2sShakti%20Infotech%20Private%20Limited-%209386454005!5e0!3m2!1sen!2sin!4v1591367980731!5m2!1sen!2sin" width="1100" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        
+      </div>
+      <!-- google map end -->
+
+
+      <div class="row align-items-center">
+        <div class="col-md-4 col-lg-3 mb-4 mb-md-0">
+          <div class="media contact-info">
+            <span class="contact-info__icon"><i class="lnr lnr-home"></i></span>
+            <div class="media-body">
+              <h3>Shakit Infortech Pvt. Ltd.</h3>
+              <p>304, 3rd Floor Samriddhi Complex,S.P.Verma Road,<br> Patna - 800001</p>
+            </div>
+          </div>
+          <div class="media contact-info">
+            <span class="contact-info__icon"><i class="lnr lnr-phone-handset"></i></span>
+            <div class="media-body">
+              <h3><a href="tel:+91-9386454005 / 938648011">+91-9386454005 / 938648011</a></h3>
+              <p>Mon to Fri 9am to 4pm</p>
+            </div>
+          </div>
+          <div class="media contact-info">
+            <span class="contact-info__icon"><i class="lnr lnr-envelope"></i></span>
+            <div class="media-body">
+              <h3><a href="patna.tally@yahoo.com">patna.tally@yahoo.com</a></h3>
+              <p>Send us your query anytime!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 col-lg-9">
+          <form action="#/" class="form-contact">
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="form-group">
+                  <input class="form-control" name="name" type="text" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" name="email" type="email" placeholder="Enter email address" required>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" name="subject" type="text" placeholder="Enter Subject">
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="form-group">
+                    <textarea class="form-control different-control w-100" name="textarea" id="textarea" cols="30" rows="6" placeholder="Enter Message"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="form-group text-center text-md-right">
+              <button type="submit" class="btn active btn--leftBorder">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+	<footer class="footer footer-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 col-lg-3 mb-4 mb-lg-0 text-left">
+					<h3 class="footer__title">Tally Service Center</h3>
+					<ul class="footer__link">
+						<li><a href="#/">Tally ERP 9 Support & Services</a></li>
+						<li><a href="#/">Tally 9 Onsite & Remote Support</a></li>
+						<li><a href="#/">Tally.NET Services</a></li>
+						<li><a href="#/">Tally ERP Implementation Services</a></li>
+						<li><a href="#/">Tally 9.0 Customization Services</a></li>
+					</ul>
+					</ul>
+				</div>
+				<div class="col-sm-4 col-lg-2 mb-4 mb-lg-0 text-left">
+					<h3 class="footer__title">Quick Links</h3>
+					<ul class="footer__link">
+						<li><a href="#/">Request a Quote</a></li>
+						<li><a href="#/">Call me Back</a></li>
+						<li><a href="#/">Site map</a></li>
+						<li><a href="#/">Contact Information</a></li>
+						<li><a href="#/">Career</a></li>
+						<li><a href="#/">CareerKnowledge Center</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-4 col-lg-3 mb-4 mb-lg-0 text-left">
+					<h3 class="footer__title">Address</h3>
+					<ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text">304, 3rd Floor Samriddhi Complex,S.P.Verma Road, Patna - 800001</span></li> <br>
+	                <h3 class="footer__title">Contacts Us</h3>
+	                <li>Mob - <a href="#"><span class="icon icon-phone"></span><span class="text">+91-9386454005 / 938648011</span></a></li>
+	                <li>Email - <a href="#"><span class="icon icon-envelope"></span><span class="text">patna.tally@yahoo.com</span></a></li><li>Office Mob - <a href="#"><span class="icon icon-envelope"></span><span class="text">0612-2214777 / 999</span></a></li>
+	              </ul>
+				</div>
+				
+				<div class="col-sm-8 col-lg-4 mb-4 mb-lg-0 text-left">
+					<h3 class="footer__title">Newsletter</h3>
+					<p>You can trust us. we only send promo offers,</p>
+					<form action="" class="form-subscribe">
+						<div class="input-group">
+							<input type="email" class="form-control" placeholder="Your email address" required>
+							<div class="input-group-append">
+								<button class="btn-append" type="submit"><i class="lnr lnr-arrow-right"></i></button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="d-sm-flex justify-content-between footer__bottom top-border">
+		<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> Design by Shubham Kumar. Mentored  <i class="fa fa-heart" aria-hidden="true"></i>  <a href="http://khabaitech.com/index.html" target="_blank">with  Khabhi Tech</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+				<ul class="social-icons mt-2 mt-sm-0">
+					<li><a href="https://www.facebook.com/shaktiinfotechpatna//"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href="#/"><i class="fab fa-twitter"></i></a></li>
+					<li><a href="#/"><i class="fab fa-dribbble"></i></a></li>
+					<li><a href="#/"><i class="fab fa-behance"></i></a></li>					
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>	
+	<script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="vendor/owl-carousel/owl.carousel.min.js"></script>
+  
+  <script>
+    var dropToggle = $('.menu_right > li').has('ul').children('a');
+        dropToggle.on('click', function() {
+          dropToggle.not(this).closest('li').find('ul').slideUp(200);
+          $(this).closest('li').children('ul').slideToggle(200);
+          return false;
+        });
+
+        $( ".toggle_icon" ).on('click', function() {
+          $( 'body' ).toggleClass( "open" );
+        });
+  </script>
+</body>
+</html>
